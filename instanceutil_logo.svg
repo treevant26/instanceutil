@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800;900&amp;display=swap');
+      .iu-wordmark {
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        font-weight: 900;
+      }
+    </style>
+
+    <!-- Warm Orange Gradient -->
+    <linearGradient id="iuOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA200" />
+      <stop offset="40%" stop-color="#FF6B00" />
+      <stop offset="100%" stop-color="#E53900" />
+    </linearGradient>
+
+    <!-- Orange Fold Highlight -->
+    <linearGradient id="iuOrangeFold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB300" />
+      <stop offset="100%" stop-color="#FFDE59" />
+    </linearGradient>
+
+    <!-- Bright Lime to Emerald Gradient -->
+    <linearGradient id="iuGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7ED91E" />
+      <stop offset="40%" stop-color="#00B64F" />
+      <stop offset="100%" stop-color="#00803B" />
+    </linearGradient>
+
+    <!-- Green Fold Highlight -->
+    <linearGradient id="iuGreenFold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#96EB34" />
+      <stop offset="100%" stop-color="#D1FF70" />
+    </linearGradient>
+
+    <filter id="iuShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <!-- EMBLEM GROUP -->
+  <g filter="url(#iuShadow)">
+    <!-- LEFT ORANGE DOCUMENT -->
+    <g>
+      <!-- Base Document Card -->
+      <path d="
+        M 270 70
+        H 415
+        L 490 145
+        V 305
+        C 490 328 472 345 450 345
+        H 270
+        C 248 345 230 328 230 305
+        V 110
+        C 230 88 248 70 270 70
+        Z
+      " fill="url(#iuOrangeGrad)" />
+
+      <!-- Folded Flap with soft shadow -->
+      <path d="
+        M 415 70
+        L 490 145
+        H 432
+        C 422 145 415 138 415 128
+        Z
+      " fill="url(#iuOrangeFold)" />
+
+      <!-- Sweeping Convergence Arrow (Left Half) -->
+      <path d="
+        M 250 330
+        C 250 348 268 358 295 358
+        C 385 358 450 405 470 472
+        H 412
+        C 402 472 396 484 404 492
+        L 497 602
+        C 498 604 500 604 500 604
+        V 345
+        H 450
+        C 370 345 310 338 250 330
+        Z
+      " fill="url(#iuOrangeGrad)" />
+
+      <!-- Left Arrow Head Final Patch -->
+      <path d="
+        M 412 472
+        H 498
+        V 604
+        L 404 492
+        C 396 484 402 472 412 472
+        Z
+      " fill="url(#iuOrangeGrad)" />
+
+      <!-- Document Content: 3 Rounded White Text Lines -->
+      <rect x="265" y="150" width="140" height="20" rx="10" fill="#FFFFFF" />
+      <rect x="265" y="190" width="140" height="20" rx="10" fill="#FFFFFF" />
+      <rect x="265" y="230" width="90" height="20" rx="10" fill="#FFFFFF" />
+    </g>
+
+    <!-- RIGHT GREEN DOCUMENT -->
+    <g>
+      <!-- Base Document Card -->
+      <path d="
+        M 550 70
+        H 695
+        L 770 145
+        V 305
+        C 770 328 752 345 730 345
+        H 550
+        C 528 345 510 328 510 305
+        V 110
+        C 510 88 528 70 550 70
+        Z
+      " fill="url(#iuGreenGrad)" />
+
+      <!-- Folded Flap -->
+      <path d="
+        M 695 70
+        L 770 145
+        H 712
+        C 702 145 695 138 695 128
+        Z
+      " fill="url(#iuGreenFold)" />
+
+      <!-- Sweeping Convergence Arrow (Right Half) -->
+      <path d="
+        M 750 330
+        C 750 348 732 358 705 358
+        C 615 358 550 405 530 472
+        H 588
+        C 598 472 604 484 596 492
+        L 503 602
+        C 502 604 500 604 500 604
+        V 345
+        H 550
+        C 630 345 690 338 750 330
+        Z
+      " fill="url(#iuGreenGrad)" />
+
+      <!-- Right Arrow Head Final Patch -->
+      <path d="
+        M 588 472
+        H 502
+        V 604
+        L 596 492
+        C 604 484 598 472 588 472
+        Z
+      " fill="url(#iuGreenGrad)" />
+
+      <!-- Document Content: Picture Frame in White -->
+      <rect x="550" y="135" width="180" height="130" rx="12" fill="none" stroke="#FFFFFF" stroke-width="16" />
+      <!-- Sun circle -->
+      <circle cx="680" cy="180" r="16" fill="#FFFFFF" />
+      <!-- Mountain slopes -->
+      <path d="
+        M 557 252
+        L 600 200
+        C 605 194 615 194 620 200
+        L 655 240
+        L 680 215
+        C 685 209 695 209 700 215
+        L 723 252
+        Z
+      " fill="#FFFFFF" />
+    </g>
+  </g>
+
+  <!-- WORDMARK: instanceutil -->
+  <g class="iu-wordmark" transform="translate(500, 680)">
+    <text text-anchor="middle" font-size="148" letter-spacing="-2.5">
+      <tspan fill="#111827">instance</tspan><tspan fill="#FF6400">util</tspan>
+    </text>
+  </g>
+</svg>
