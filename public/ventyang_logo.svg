@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- Background Card -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800;900&amp;display=swap');
+      .vy-brand { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+    </style>
+
+    <!-- Blue Gradient for V Left Arm -->
+    <linearGradient id="vLeftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#007BFF" />
+      <stop offset="60%" stop-color="#005BEA" />
+      <stop offset="100%" stop-color="#0044CC" />
+    </linearGradient>
+
+    <!-- Cyan-Blue Gradient for V Right Arm -->
+    <linearGradient id="vRightGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="50%" stop-color="#009BFF" />
+      <stop offset="100%" stop-color="#00D2FF" />
+    </linearGradient>
+
+    <!-- Warm Orange Gradient for Y -->
+    <linearGradient id="yGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA000" />
+      <stop offset="50%" stop-color="#FF6B00" />
+      <stop offset="100%" stop-color="#F84500" />
+    </linearGradient>
+
+    <!-- Soft Depth Shadow -->
+    <filter id="depthShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="-4" dy="8" stdDeviation="10" flood-color="#002060" flood-opacity="0.22" />
+    </filter>
+
+    <filter id="yShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="6" stdDeviation="8" flood-color="#882200" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Clean Canvas -->
+  <rect width="1000" height="1000" fill="#FFFFFF" rx="32" />
+
+  <!-- Y EMBLEM (Behind V) -->
+  <g filter="url(#yShadow)">
+    <!-- Y Stem and Arm in One Smooth Ribbon -->
+    <path d="
+      M 605 520
+      L 605 385
+      L 755 200
+      C 762 192 774 190 784 196
+      L 838 226
+      C 848 232 850 245 844 254
+      L 695 435
+      L 695 520
+      C 695 530 686 538 676 538
+      L 624 538
+      C 614 538 605 530 605 520
+      Z
+    " fill="url(#yGrad)" />
+  </g>
+
+  <!-- V EMBLEM (Front Ribbon Layer) -->
+  <g filter="url(#depthShadow)">
+    <!-- V Left Wing -->
+    <path d="
+      M 195 135
+      C 195 122 206 114 219 114
+      L 355 114
+      C 368 114 378 122 383 134
+      L 452 320
+      L 426 515
+      C 423 530 408 538 393 531
+      L 365 518
+      C 353 512 344 500 339 486
+      L 203 148
+      C 198 144 195 140 195 135
+      Z
+    " fill="url(#vLeftGrad)" />
+
+    <!-- V Right Wing (Sweeping from bottom apex up-right) -->
+    <path d="
+      M 378 518
+      C 392 534 416 538 434 526
+      L 670 195
+      C 678 184 692 178 706 178
+      L 750 178
+      C 765 178 775 192 770 206
+      L 630 495
+      C 618 522 590 540 560 540
+      L 435 540
+      C 405 540 376 525 365 500
+      Z
+    " fill="url(#vRightGrad)" />
+
+    <!-- V Right Top Aerodynamic Fin -->
+    <path d="
+      M 565 115
+      L 745 115
+      C 758 115 768 126 764 139
+      L 712 260
+      C 708 270 696 276 685 276
+      L 620 276
+      C 610 276 600 270 596 260
+      L 548 135
+      C 544 122 553 115 565 115
+      Z
+    " fill="url(#vRightGrad)" />
+  </g>
+
+  <!-- BRAND NAME: VentYang -->
+  <g class="vy-brand" transform="translate(500, 672)">
+    <text text-anchor="middle" font-size="124" font-weight="900" letter-spacing="-1.5">
+      <tspan fill="#0066FF">Vent</tspan><tspan fill="#FF6600">Yang</tspan>
+    </text>
+  </g>
+
+  <!-- SUBTITLE: IDEAS INTO REALITY -->
+  <g class="vy-brand" transform="translate(500, 722)">
+    <text text-anchor="middle" font-size="27" font-weight="800" fill="#111827" letter-spacing="7">
+      IDEAS INTO REALITY
+    </text>
+  </g>
+
+  <!-- HAIRLINE DIVIDER -->
+  <line x1="45" y1="780" x2="955" y2="780" stroke="#E2E8F0" stroke-width="2.5" />
+
+  <!-- SERVICE PILLARS WITH ICONS -->
+  <!-- 1. Mobile App & Web Development -->
+  <g class="vy-brand" transform="translate(45, 804)">
+    <!-- Smartphone icon -->
+    <rect x="0" y="6" width="44" height="72" rx="9" fill="none" stroke="#0066FF" stroke-width="4.5" />
+    <circle cx="22" cy="67" r="3" fill="#0066FF" />
+    <!-- Web/Code Overlay Card -->
+    <rect x="44" y="14" width="74" height="52" rx="7" fill="#0066FF" />
+    <circle cx="56" cy="22" r="2.5" fill="#FFFFFF" />
+    <circle cx="64" cy="22" r="2.5" fill="#FFFFFF" />
+    <circle cx="72" cy="22" r="2.5" fill="#FFFFFF" />
+    <text x="81" y="49" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-weight="900" font-size="18">&lt;/&gt;</text>
+
+    <!-- Text -->
+    <text x="132" y="37" fill="#0F172A" font-size="23" font-weight="800">Mobile App &amp;</text>
+    <text x="132" y="66" fill="#0F172A" font-size="23" font-weight="800">Web Development</text>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="438" y1="795" x2="438" y2="885" stroke="#CBD5E1" stroke-width="2" />
+
+  <!-- 2. Design -->
+  <g class="vy-brand" transform="translate(465, 804)">
+    <!-- Pen Tool Vector Icon -->
+    <path d="M 12 34 Q 40 12 68 34" fill="none" stroke="#0077FF" stroke-width="3.5" />
+    <rect x="8" y="30" width="8" height="8" fill="#0077FF" />
+    <rect x="64" y="30" width="8" height="8" fill="#0077FF" />
+    <path d="M 40 34 L 28 62 L 52 62 Z" fill="#0066FF" />
+    <circle cx="40" cy="52" r="2.5" fill="#FFFFFF" />
+    <line x1="40" y1="62" x2="40" y2="76" stroke="#0077FF" stroke-width="3.5" stroke-linecap="round" />
+    <!-- Text -->
+    <text x="85" y="54" fill="#0F172A" font-size="26" font-weight="800">Design</text>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="710" y1="795" x2="710" y2="885" stroke="#CBD5E1" stroke-width="2" />
+
+  <!-- 3. Creative Solutions -->
+  <g class="vy-brand" transform="translate(735, 804)">
+    <!-- Lightbulb Icon -->
+    <path d="M 40 40 C 40 28 30 18 18 18 C 6 18 -4 28 -4 40 C -4 48 1 55 6 60 L 6 68 L 30 68 L 30 60 C 35 55 40 48 40 40 Z" transform="translate(22, 0)" fill="none" stroke="#0077FF" stroke-width="3.5" />
+    <line x1="34" y1="72" x2="46" y2="72" stroke="#0077FF" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="40" y1="7" x2="40" y2="13" stroke="#0077FF" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="18" y1="16" x2="23" y2="21" stroke="#0077FF" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="62" y1="16" x2="57" y2="21" stroke="#0077FF" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="9" y1="39" x2="15" y2="39" stroke="#0077FF" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="65" y1="39" x2="71" y2="39" stroke="#0077FF" stroke-width="3.5" stroke-linecap="round" />
+    <!-- Text -->
+    <text x="86" y="37" fill="#0F172A" font-size="23" font-weight="800">Creative</text>
+    <text x="86" y="66" fill="#0F172A" font-size="23" font-weight="800">Solutions</text>
+  </g>
+</svg>

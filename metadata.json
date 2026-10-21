@@ -1,0 +1,6 @@
+{
+  "name": "PulseDoc - Mobile Support & Utilities",
+  "description": "Global mobile app companion support portal featuring Blood Pressure Health Tracker, JPG to PDF document converter, and device assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
