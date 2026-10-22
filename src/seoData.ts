@@ -142,6 +142,11 @@ export const TOOL_SEO_PAGES: Record<ActiveTool, ToolSeoData> = {
     heading: 'Image to PDF Converter with Compression',
     subheading: 'Convert photos, receipts, screenshots, and scans into professional multi-page PDF documents with built-in compression.',
     howToTitle: 'How to Convert Images to Compressed PDF Documents',
+    infographicImage: {
+      src: '/assets/aistudio/Convert_Images_into_One_PDF_200f0b24.png',
+      alt: 'How to Convert Multiple Images into One PDF – InstanceUtil Infographic',
+      caption: 'Visual workflow: combine JPG, PNG, JPEG, and WebP pictures into an organized, high-quality multi-page PDF document.'
+    },
     steps: [
       {
         title: '1. Upload Images',

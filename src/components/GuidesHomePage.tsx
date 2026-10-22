@@ -11,6 +11,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { GUIDES_LIST, GuideArticle } from '../guidesData';
+import { getAssetUrl } from '../utils/assetUrl';
 
 interface GuidesHomePageProps {
   onNavigateToArticle: (slug: string) => void;
@@ -121,7 +122,7 @@ export const GuidesHomePage: React.FC<GuidesHomePageProps> = ({
               {guide.featuredImage && (
                 <div className="absolute inset-0">
                   <img
-                    src={guide.featuredImage.src}
+                    src={getAssetUrl(guide.featuredImage.src)}
                     alt={guide.featuredImage.alt}
                     className="w-full h-full object-cover opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-300"
                     loading="lazy"

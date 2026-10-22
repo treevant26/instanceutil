@@ -242,6 +242,11 @@ export const GUIDES_LIST: GuideArticle[] = [
     date: 'October 20, 2026',
     updated: 'October 20, 2026',
     readTime: '4 min read',
+    featuredImage: {
+      src: '/assets/aistudio/Convert_Images_into_One_PDF_200f0b24.png',
+      alt: 'How to Convert Multiple Images into One PDF - Visual Infographic',
+      caption: 'Visual workflow: combine JPG, PNG, JPEG, and WebP pictures into an organized, high-quality multi-page PDF document.'
+    },
     relatedTool: {
       label: 'Image to PDF Converter',
       href: '/image-to-pdf',

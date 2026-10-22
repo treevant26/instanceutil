@@ -42,6 +42,7 @@ import { getGuideBySlug } from './guidesData';
 import { ToolSeoSection } from './components/ToolSeoSection';
 import { GuidesHomePage } from './components/GuidesHomePage';
 import { GuideArticlePage } from './components/GuideArticlePage';
+import instanceUtilLogo from './assets/instanceutil_logo.svg';
 
 /* =========================================================================
    TYPES
@@ -2561,7 +2562,7 @@ export default function App() {
               aria-label="InstanceUtil"
             >
               <img
-                src="instanceutil_logo.svg"
+                src={instanceUtilLogo}
                 alt="instanceutil logo"
                 className="h-10 sm:h-11 w-auto object-contain"
               />
@@ -2829,7 +2830,7 @@ export default function App() {
             <div className="space-y-4">
               <div className="flex items-center gap-2.5">
                 <img
-                  src="instanceutil_logo.svg"
+                  src={instanceUtilLogo}
                   alt="InstanceUtil"
                   className="h-8 w-auto object-contain"
                 />

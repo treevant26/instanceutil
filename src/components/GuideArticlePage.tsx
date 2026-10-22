@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { GuideArticle, GUIDES_LIST } from '../guidesData';
 import { ActiveTool } from '../App';
+import { getAssetUrl } from '../utils/assetUrl';
 
 interface GuideArticlePageProps {
   article: GuideArticle;
@@ -103,11 +104,26 @@ export const GuideArticlePage: React.FC<GuideArticlePageProps> = ({
             </div>
           )}
 
+          {/* DEDICATED VISUAL INFOGRAPHIC FOR CONVERT IMAGES TO PDF */}
+          {article.slug === 'convert-images-to-pdf' && (
+            <div className="rounded-2xl overflow-hidden border border-slate-200/90 shadow-2xs bg-white p-2 sm:p-3">
+              <img
+                src={getAssetUrl('/assets/aistudio/Convert_Images_into_One_PDF_200f0b24.png')}
+                alt="How to Convert Multiple Images into One PDF - Visual Infographic"
+                className="w-full h-auto rounded-xl object-contain mx-auto"
+                loading="lazy"
+              />
+              <p className="text-[11px] text-slate-500 text-center pt-2 pb-0.5">
+                Visual workflow: combine JPG, PNG, JPEG, and WebP pictures into an organized, high-quality multi-page PDF document.
+              </p>
+            </div>
+          )}
+
           {/* DEDICATED VISUAL INFOGRAPHIC FOR HOW TO COMPRESS A PDF */}
           {article.slug === 'how-to-compress-pdf' && (
             <div className="rounded-2xl overflow-hidden border border-slate-200/90 shadow-2xs bg-white p-2 sm:p-3">
               <img
-                src="/assets/aistudio/How_to_Compress_a_PDF_Without_Losing_Quality_3e6b8023.png"
+                src={getAssetUrl('/assets/aistudio/How_to_Compress_a_PDF_Without_Losing_Quality_3e6b8023.png')}
                 alt="How to Compress a PDF Without Losing Quality - Infographic Overview"
                 className="w-full h-auto rounded-xl object-contain mx-auto"
                 loading="lazy"
@@ -121,7 +137,7 @@ export const GuideArticlePage: React.FC<GuideArticlePageProps> = ({
               {/* FEATURED COMPARISON INFOGRAPHIC BANNER */}
               <div className="rounded-2xl overflow-hidden border border-slate-200/90 shadow-2xs bg-white p-2 sm:p-3">
                 <img
-                  src="/assets/aistudio/JPG_vs_PNG_vs_WebP_Comparison_20d3eb0f.png"
+                  src={getAssetUrl('/assets/aistudio/JPG_vs_PNG_vs_WebP_Comparison_20d3eb0f.png')}
                   alt="JPG vs PNG vs WebP: Which Image Format Is Best? - Visual Comparison Infographic"
                   className="w-full h-auto rounded-xl object-contain mx-auto"
                   loading="lazy"

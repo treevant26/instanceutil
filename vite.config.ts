@@ -3,10 +3,10 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
+export default defineConfig(({ command }) => {
   return {
+    base: command === 'build' ? './' : '/',
     plugins: [react(), tailwindcss()],
-    base: "/instanceutil/", 
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
@@ -19,9 +19,5 @@ export default defineConfig(() => {
       // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
-    build: {
-      chunkSizeWarningLimit: 800,
-    },
   };
 });
-
