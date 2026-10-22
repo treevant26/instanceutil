@@ -313,6 +313,11 @@ export const GUIDES_LIST: GuideArticle[] = [
     date: 'October 20, 2026',
     updated: 'October 20, 2026',
     readTime: '4 min read',
+    featuredImage: {
+      src: infographics.wordCountVsCharacterCount,
+      alt: "Word Count vs Character Count: What's the Difference? – InstanceUtil Infographic",
+      caption: "Visual breakdown: 19 words vs 137 characters analyzed in real-time using a notebook pangram sample."
+    },
     relatedTool: {
       label: 'Word Counter & Text Utilities',
       href: '/word-counter',

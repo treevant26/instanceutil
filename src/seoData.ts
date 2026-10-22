@@ -284,6 +284,11 @@ export const TOOL_SEO_PAGES: Record<ActiveTool, ToolSeoData> = {
     heading: 'Word Counter & Text Utilities',
     subheading: 'Real-time text analytics, word and character counters, reading time estimators, and one-click text case transformations.',
     howToTitle: 'How to Analyze and Transform Your Text',
+    infographicImage: {
+      src: infographics.wordCountVsCharacterCount,
+      alt: "Word Count vs Character Count: What's the Difference? – InstanceUtil Infographic",
+      caption: 'Visual demonstration: 19 words vs 137 characters measured in real-time from a handwritten notebook excerpt.'
+    },
     steps: [
       {
         title: '1. Paste or Type Text',

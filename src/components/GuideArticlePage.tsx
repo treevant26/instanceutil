@@ -235,6 +235,21 @@ export const GuideArticlePage: React.FC<GuideArticlePageProps> = ({
           </div>
         )}
 
+          {/* DEDICATED VISUAL INFOGRAPHIC FOR WORD COUNT VS CHARACTER COUNT */}
+          {article.slug === 'word-count-vs-character-count' && (
+            <div className="rounded-2xl overflow-hidden border border-slate-200/90 shadow-2xs bg-white p-2 sm:p-3">
+              <img
+                src={getAssetUrl(infographics.wordCountVsCharacterCount)}
+                alt="Word Count vs Character Count: What's the Difference? – Visual Infographic"
+                className="w-full h-auto rounded-xl object-contain mx-auto"
+                loading="lazy"
+              />
+              <p className="text-[11px] text-slate-500 text-center pt-2 pb-0.5">
+                Visual breakdown: comparing word count (19 words) vs character count (137 characters) using a notebook pangram sample.
+              </p>
+            </div>
+          )}
+
           {/* CONTENT SECTIONS */}
           <div className="space-y-8 text-slate-700 text-xs sm:text-sm leading-relaxed">
             {article.contentSections.map((sec) => (
