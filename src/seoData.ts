@@ -1,4 +1,5 @@
 import { ActiveTool, ToolCategory } from './App';
+import { infographics } from './assets/infographics';
 
 export interface SeoStep {
   title: string;
@@ -46,7 +47,7 @@ export const TOOL_SEO_PAGES: Record<ActiveTool, ToolSeoData> = {
     subheading: 'Combine multiple PDF files in any order and shrink final document size locally inside your browser.',
     howToTitle: 'How to Merge and Add Compression to Your PDF Files',
     infographicImage: {
-      src: '/assets/aistudio/How_to_Compress_a_PDF_Without_Losing_Quality_3e6b8023.png',
+      src: infographics.howToCompressPdf,
       alt: 'How to Compress a PDF Without Losing Quality – InstanceUtil Infographic',
       caption: 'Visual workflow: optimize embedded images, compress PDF streams, and shrink bloated documents without losing clarity.'
     },
@@ -143,7 +144,7 @@ export const TOOL_SEO_PAGES: Record<ActiveTool, ToolSeoData> = {
     subheading: 'Convert photos, receipts, screenshots, and scans into professional multi-page PDF documents with built-in compression.',
     howToTitle: 'How to Convert Images to Compressed PDF Documents',
     infographicImage: {
-      src: '/assets/aistudio/Convert_Images_into_One_PDF_200f0b24.png',
+      src: infographics.convertImagesToPdf,
       alt: 'How to Convert Multiple Images into One PDF – InstanceUtil Infographic',
       caption: 'Visual workflow: combine JPG, PNG, JPEG, and WebP pictures into an organized, high-quality multi-page PDF document.'
     },
@@ -214,7 +215,7 @@ export const TOOL_SEO_PAGES: Record<ActiveTool, ToolSeoData> = {
     subheading: 'Reduce image file size directly in your browser with custom quality targets and resolution downscaling.',
     howToTitle: 'How to Compress Images Locally in Your Browser',
     infographicImage: {
-      src: '/assets/aistudio/JPG_vs_PNG_vs_WebP_Comparison_20d3eb0f.png',
+      src: infographics.jpgVsPngVsWebp,
       alt: 'JPG vs PNG vs WebP: Which Image Format Is Best? – InstanceUtil Infographic',
       caption: 'Visual format comparison: JPG for photography, PNG for transparent graphics & logos, and WebP for optimal modern web performance.'
     },

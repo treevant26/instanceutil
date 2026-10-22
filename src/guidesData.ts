@@ -1,3 +1,5 @@
+import { infographics } from './assets/infographics';
+
 export interface GuideArticle {
   slug: string;
   title: string;
@@ -45,7 +47,7 @@ export const GUIDES_LIST: GuideArticle[] = [
     updated: 'October 20, 2026',
     readTime: '5 min read',
     featuredImage: {
-      src: '/assets/aistudio/How_to_Compress_a_PDF_Without_Losing_Quality_3e6b8023.png',
+      src: infographics.howToCompressPdf,
       alt: 'How to Compress a PDF Without Losing Quality - InstanceUtil Guide',
       caption: 'Visual workflow: reduce bloated PDF sizes (e.g. from 12.4 MB to 2.1 MB) without losing visual sharpness or font legibility.'
     },
@@ -146,7 +148,7 @@ export const GUIDES_LIST: GuideArticle[] = [
     updated: 'October 20, 2026',
     readTime: '6 min read',
     featuredImage: {
-      src: '/assets/aistudio/JPG_vs_PNG_vs_WebP_Comparison_20d3eb0f.png',
+      src: infographics.jpgVsPngVsWebp,
       alt: 'JPG vs PNG vs WebP: Which Image Format Is Best? - Visual Comparison Infographic',
       caption: 'Visual comparison: JPG (smaller file size, great for photos), PNG (lossless quality, transparency support), and WebP (smaller file size, high quality, modern web standard).'
     },
@@ -243,7 +245,7 @@ export const GUIDES_LIST: GuideArticle[] = [
     updated: 'October 20, 2026',
     readTime: '4 min read',
     featuredImage: {
-      src: '/assets/aistudio/Convert_Images_into_One_PDF_200f0b24.png',
+      src: infographics.convertImagesToPdf,
       alt: 'How to Convert Multiple Images into One PDF - Visual Infographic',
       caption: 'Visual workflow: combine JPG, PNG, JPEG, and WebP pictures into an organized, high-quality multi-page PDF document.'
     },

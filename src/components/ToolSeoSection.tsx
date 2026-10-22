@@ -13,6 +13,7 @@ import {
 import { TOOL_SEO_PAGES, ToolSeoData } from '../seoData';
 import { ActiveTool } from '../App';
 import { getAssetUrl } from '../utils/assetUrl';
+import { infographics } from '../assets/infographics';
 
 interface ToolSeoSectionProps {
   tool: ActiveTool;
@@ -48,7 +49,7 @@ export const ToolSeoSection: React.FC<ToolSeoSectionProps> = ({ tool, onNavigate
         {(data.infographicImage || tool === 'merge-pdf' || data.id === 'merge-pdf') && (
           <div className="rounded-2xl overflow-hidden border border-slate-200/90 shadow-2xs bg-white p-2 sm:p-3 my-2">
             <img
-              src={getAssetUrl(data.infographicImage?.src || "/assets/aistudio/How_to_Compress_a_PDF_Without_Losing_Quality_3e6b8023.png")}
+              src={getAssetUrl(data.infographicImage?.src || infographics.howToCompressPdf)}
               alt={data.infographicImage?.alt || "How to Compress a PDF Without Losing Quality - InstanceUtil Guide Infographic"}
               className="w-full h-auto rounded-xl object-contain mx-auto"
               loading="lazy"
