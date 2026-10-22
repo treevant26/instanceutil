@@ -5,8 +5,9 @@
     <title>InstanceUtil</title>
     <script>
       // Single Page Apps for GitHub Pages
-      // Mitigates 404 on deep links like /merge-pdf or /guides/how-to-compress-pdf/
-      var segmentCount = 1;
+      // Works for both github.io/repo/ subpaths (segmentCount = 1) and custom domains (segmentCount = 0)
+      var isSubpath = window.location.hostname.endsWith('github.io');
+      var segmentCount = isSubpath ? 1 : 0;
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
